@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "Blog h bhai",
   "main": "index.js",
+  "engine": {
+    "node":"12.14.1",
+    "npm":"6.13.4"
+  },
   "scripts": {
-    "start": "node index.js",
-    "backend": "nodemon index.js"
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js"
   },
   "author": "S Adeel",
   "license": "ISC",
