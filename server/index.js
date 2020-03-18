@@ -23,9 +23,9 @@ const connect = mongoose.connect(config.mongoURI,
     {useNewUrlParser: true}).then(()=>console.log('Connected')).catch(err=>console.error(err)); */
 
 //Routes, Simple Server
-/* app.get('/', (req,res)=>{
+app.get('/', (req,res)=>{
     res.send('Hello! Adeel')
-}); */
+});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
