@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {loginUser} from '../../actions/user_actions';
+import { Link} from 'react-router-dom';
 
 class RegisterLogin extends Component {
 
@@ -108,7 +109,7 @@ class RegisterLogin extends Component {
 
                         {/* LoginButton */}
                         <div className="row">
-                            <div className="col 12">
+                            <div className="col s6">
                                 <button
                                     className="btn waves-effect red lighten-2"
                                     type="submit"
@@ -116,7 +117,17 @@ class RegisterLogin extends Component {
                                     onClick={this.submitForm}
                                 >Login</button>
                             </div>
+
+                            <div className="col s6">
+                                <Link to="/register">
+                                <button
+                                    className="btn waves-effect red lighten-2"
+                                    type="submit"
+                                    name="action"
+                                >SignUp</button></Link>
+                            </div>
                         </div>
+                        
                     </form>
                 </div>
             </div>
